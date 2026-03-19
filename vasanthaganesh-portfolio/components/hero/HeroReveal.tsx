@@ -31,7 +31,7 @@ export default function HeroReveal() {
       tl.to('.light-bloom', { opacity: 0.8, duration: 1.2, ease: "power2.inOut" }, 0.4);
       
       // 3. t=1.0s — Giant background text "VASANTHAGANESH" slides in (adjusted timing since no photo)
-      tl.to('.bg-name', { x: 0, opacity: 0.15, duration: 1.2, ease: "power3.out" }, 1.0);
+      tl.to('.bg-name', { x: 0, opacity: 0.25, duration: 1.2, ease: "power3.out" }, 1.0);
       
       // 5. t=2.0s — Italic tagline sweeps in (we use fade since we don't have premium SplitText)
       tl.to('.hero-tagline', { opacity: 1, duration: 0.8, ease: "power2.out" }, 2.0);
@@ -55,7 +55,6 @@ export default function HeroReveal() {
   return (
     <section id="hero" ref={containerRef} className="relative w-full h-screen border-b border-rule/20">
       <Hero
-        trustBadge={{ text: HERO_COPY.eyebrow }}
         headline={{ line1: HERO_COPY.name.join('') }}
         subtitle={HERO_COPY.tagline}
       >

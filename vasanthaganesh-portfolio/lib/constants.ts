@@ -12,7 +12,6 @@ export const PALETTE = {
 };
 
 export const HERO_COPY = {
-  eyebrow: "Puducherry, India — Full-Stack Developer",
   name: ["VASAN", "THA", "GANESH"],
   tagline: "Vibe-Driven Full-Stack Developer",
   body: "I build at the intersection of code and craft — treating every product like a world worth inhabiting.",

@@ -361,11 +361,13 @@ const Hero: React.FC<HeroProps> = ({
         <div className="text-center space-y-6 max-w-5xl mx-auto px-4 relative z-20 pointer-events-none">
           {/* Main Heading with Animation */}
           <div className="space-y-2 pointer-events-auto">
-            <h1 className="text-6xl md:text-8xl lg:text-[10rem] leading-none font-display text-transparent bg-clip-text bg-gradient-to-br from-paper via-paper to-ember-dark hero-name">
+            <h1 className="text-6xl md:text-8xl lg:text-[10rem] leading-none font-display text-paper md:text-transparent md:bg-clip-text md:bg-gradient-to-br from-paper via-paper to-ember-dark hero-name"
+                style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               {headline.line1}
             </h1>
             {headline.line2 && (
-              <h1 className="text-6xl md:text-8xl lg:text-[10rem] leading-none font-display text-transparent bg-clip-text bg-gradient-to-br from-paper via-paper to-ember-dark hero-name">
+              <h1 className="text-6xl md:text-8xl lg:text-[10rem] leading-none font-display text-paper md:text-transparent md:bg-clip-text md:bg-gradient-to-br from-paper via-paper to-ember-dark hero-name"
+                  style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 {headline.line2}
               </h1>
             )}
