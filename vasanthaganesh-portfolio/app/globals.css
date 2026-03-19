@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+/* CSS Variables */
+:root {
+  --ink: #0e0c0a;
+  --paper: #f4f0e8;
+  --ember: #c8622a;
+  --ember-warm: #e07a3a;
+  --ember-dark: #8a3d16;
+  --amber: #d4924a;
+  --muted: #7a7060;
+  --rule: #c8bfa8;
+}
+
+body {
+  background-color: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: var(--ember-dark);
+  color: var(--paper);
+}
+
+/* Base reset for Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Accessibility: Skip to Content */
+.skip-to-content:focus {
+  outline: 2px solid var(--ember-warm);
+  outline-offset: 4px;
+}
+
+/* Base Focus States */
+a:focus-visible, 
+button:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 4px;
+}
+
